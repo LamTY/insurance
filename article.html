@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="artTitle">Article — CoverPro Insights</title>
+  <meta name="description" id="artDesc" content="">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="article">
+  <meta property="og:title" id="ogTitle" content="">
+  <meta property="og:description" id="ogDesc" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="header-inner"><a href="index.html" class="logo"><span class="logo-icon">🛡</span>CoverPro Insights</a><nav><a href="index.html">Home</a><a href="articles.html">All Articles</a><a href="category.html?cat=pilot">Pilots</a><a href="category.html?cat=doctor">Doctors</a><a href="category.html?cat=lawyer">Lawyers</a><a href="category.html?cat=contractor">Contractors</a><a href="category.html?cat=senior">Seniors</a><a href="about.html" class="nav-btn">About Us</a></nav><button class="mobile-menu-btn">☰</button></div></header>
+<div class="mobile-menu"><button class="mobile-close">✕</button><a href="index.html">Home</a><a href="articles.html">All Articles</a><a href="category.html?cat=pilot">Pilots</a><a href="category.html?cat=doctor">Doctors</a><a href="category.html?cat=lawyer">Lawyers</a><a href="category.html?cat=contractor">Contractors</a><a href="category.html?cat=senior">Seniors</a></div>
+
+<main class="article-page">
+  <div class="container">
+    <div class="article-layout">
+
+      <!-- MAIN CONTENT -->
+      <article>
+        <div class="article-header">
+          <div class="breadcrumb">
+            <a href="index.html">Home</a><span>›</span>
+            <a id="breadCat" href="#">Category</a><span>›</span>
+            <span id="breadTitle">Article</span>
+          </div>
+          <div id="artTag" style="margin-bottom:16px"></div>
+          <h1 id="artH1"></h1>
+          <div class="article-header-meta" style="margin-top:20px">
+            <div class="author-info">
+              <div class="author-avatar" id="authorAvatar">CP</div>
+              <div>
+                <div class="author-name" id="authorName">CoverPro Research Team</div>
+                <div style="font-family:var(--font-ui);font-size:0.78rem;color:var(--text-muted)" id="artDateLine"></div>
+              </div>
+            </div>
+            <div style="display:flex;gap:16px;margin-left:auto;flex-wrap:wrap">
+              <span style="font-family:var(--font-ui);font-size:0.8rem;color:var(--text-muted)" id="artReadTime"></span>
+              <span style="font-family:var(--font-ui);font-size:0.8rem;color:var(--accent)">2026 Updated</span>
+            </div>
+          </div>
+        </div>
+        <div class="article-content" id="artContent"></div>
+
+        <!-- Related -->
+        <div class="related-section">
+          <div class="section-label">Continue Reading</div>
+          <h3 style="margin-bottom:24px">Related Articles</h3>
+          <div class="articles-grid" id="relatedGrid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))"></div>
+        </div>
+      </article>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h4>Table of Contents</h4>
+          <div id="tocList"></div>
+        </div>
+        <div class="sidebar-widget">
+          <h4>In This Category</h4>
+          <ul class="sidebar-list" id="catSidebar"></ul>
+        </div>
+        <div class="sidebar-widget" style="background:var(--accent-dim);border-color:rgba(79,142,247,0.2)">
+          <h4 style="color:var(--accent)">Quick Tip</h4>
+          <p style="font-size:0.85rem;margin:0;color:var(--text-primary)">Get at least 3 quotes from specialists in your profession before purchasing any insurance policy. Generic brokers often don't know the best carriers for your situation.</p>
+        </div>
+        <div class="sidebar-widget">
+          <h4>All Categories</h4>
+          <ul class="sidebar-list">
+            <li><a href="category.html?cat=pilot">✈️ Pilot Insurance (20)</a></li>
+            <li><a href="category.html?cat=doctor">🩺 Physician Insurance (20)</a></li>
+            <li><a href="category.html?cat=lawyer">⚖️ Attorney Insurance (20)</a></li>
+            <li><a href="category.html?cat=contractor">🔨 Contractor Insurance (20)</a></li>
+            <li><a href="category.html?cat=senior">🌿 Senior Insurance (20)</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="logo"><span class="logo-icon">🛡</span>CoverPro Insights</a><p>Independent insurance research for working professionals.</p></div><div class="footer-col"><h5>Categories</h5><ul><li><a href="category.html?cat=pilot">Pilot Insurance</a></li><li><a href="category.html?cat=doctor">Physician Insurance</a></li><li><a href="category.html?cat=lawyer">Attorney Insurance</a></li><li><a href="category.html?cat=contractor">Contractor Insurance</a></li><li><a href="category.html?cat=senior">Senior Insurance</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 CoverPro Insights. For informational purposes only — not financial, legal, or insurance advice.</p></div></div></footer>
+
+<script src="js/app.js"></script>
+<script>
+  const slug = new URLSearchParams(window.location.search).get('slug');
+  let art = null;
+  if (slug) {
+    const stored = sessionStorage.getItem('currentArticle');
+    if (stored) {
+      const parsed = JSON.parse(stored);
+      if (parsed.slug === slug) art = parsed;
+    }
+    if (!art) art = ARTICLES.find(a => a.slug === slug);
+  }
+  if (!art) art = ARTICLES[0];
+
+  const cat = CATEGORIES[art.cat];
+  const initials = art.cat === 'pilot' ? 'CP' : art.cat === 'doctor' ? 'MD' : art.cat === 'lawyer' ? 'JD' : art.cat === 'contractor' ? 'CB' : 'SR';
+
+  // SEO
+  document.getElementById('artTitle').textContent = `${art.title} — CoverPro Insights`;
+  document.getElementById('artDesc').content = art.excerpt;
+  document.getElementById('ogTitle').content = art.title;
+  document.getElementById('ogDesc').content = art.excerpt;
+
+  // Breadcrumb
+  document.getElementById('breadCat').href = `category.html?cat=${art.cat}`;
+  document.getElementById('breadCat').textContent = cat.name;
+  document.getElementById('breadTitle').textContent = art.title.substring(0,50) + '…';
+
+  // Header
+  document.getElementById('artTag').innerHTML = `<span class="article-tag tag-${cat.color}">${cat.name}</span>`;
+  document.getElementById('artH1').textContent = art.title;
+  document.getElementById('authorAvatar').textContent = initials;
+  document.getElementById('artDateLine').textContent = formatDate(art.date);
+  document.getElementById('artReadTime').textContent = `${art.readTime} min read`;
+
+  // Content
+  document.getElementById('artContent').innerHTML = generateArticleContent(art);
+
+  // TOC
+  const headings = document.querySelectorAll('.article-content h2, .article-content h3');
+  const toc = document.getElementById('tocList');
+  headings.forEach((h, i) => {
+    h.id = `section-${i}`;
+    const link = document.createElement('a');
+    link.className = 'toc-link';
+    link.href = `#section-${i}`;
+    link.textContent = h.textContent;
+    link.style.paddingLeft = h.tagName === 'H3' ? '28px' : '14px';
+    link.style.fontSize = h.tagName === 'H3' ? '0.8rem' : '0.85rem';
+    toc.appendChild(link);
+  });
+
+  // Category sidebar
+  const catArts = ARTICLES.filter(a => a.cat === art.cat && a.id !== art.id).slice(0,6);
+  document.getElementById('catSidebar').innerHTML = catArts.map(a =>
+    `<li><a href="article.html?slug=${a.slug}" onclick="return navigateToArticle('${a.slug}')">${a.title}</a></li>`
+  ).join('');
+
+  // Related
+  const related = ARTICLES.filter(a => a.cat === art.cat && a.id !== art.id).slice(0,3);
+  document.getElementById('relatedGrid').innerHTML = related.map(a => articleCardHTML(a)).join('');
+
+  // Schema
+  const schema = {"@context":"https://schema.org","@type":"Article","headline":art.title,"description":art.excerpt,"datePublished":art.date,"dateModified":art.date,"author":{"@type":"Organization","name":"CoverPro Research Team"},"publisher":{"@type":"Organization","name":"CoverPro Insights"}};
+  const s = document.createElement('script');
+  s.type = 'application/ld+json';
+  s.textContent = JSON.stringify(schema);
+  document.head.appendChild(s);
+</script>
+</body></html>

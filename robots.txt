@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://coverpro-insights.com/sitemap.xml
