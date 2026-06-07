@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://insurejoy.top/sitemap.xml
